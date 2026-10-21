@@ -1,0 +1,1 @@
+const tabs=[...document.querySelectorAll('[data-mode]')];const rows=[...document.querySelectorAll('[data-rating-mode]')];tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===t));rows.forEach(r=>r.hidden=r.dataset.ratingMode!==t.dataset.mode)}));
